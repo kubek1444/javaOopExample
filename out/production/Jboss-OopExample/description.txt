@@ -1,0 +1,30 @@
+        Encapsulation
+Encapsulation is a mechanism of wrapping of variables. I mark variables as private and create getters and setters
+for them. Getter and setter allow read and write variable.
+
+    Advantages: security, flexibility and easy maintainability.
+
+        Inheritance
+I create classes Bike, Car and Truck and each inherits Vehicle. I do not have to create variables name and maxSpeed in
+each class due to inheritance. I must use the keyword "super" in the constructor. Super is a reference to parent constructor.
+
+    Advantages: reusability and extensibility.
+
+        Polymorphism
+Runtime polymorphism (Dynamic Method Dispatch)  is a process in which a function call to the overridden
+ method is resolved at Runtime. This type of polymorphism is achieved by Method Overriding.
+ Also, I use the upcasting. I use Vehicle bike = new Bike rather than Bike bike = new Bike().
+
+Compile-time polymorphism (static method dispatch) is a process in which a call to an overloading method
+ is resolved at compile time rather than at runtime. In java, the representation of compile-time polymorphism
+  is method overloading. In the truck class, I create two methods with the same name "entrucking".
+   Which "entrucking" method would be called is determined by the parameter list at the compile time.
+
+   Advantages: reuse the code, reducing the coupling between different functionalities
+
+        Abstraction
+
+I create one abstract class Vehicle. This means I cannot create an instance of this class.
+I create abstract method go(). Each class which inherit class Vehicle must implement this method.
+
+    Advantages: makes code as readable and more simpler, code is very complex
